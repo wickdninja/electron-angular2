@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "rootDir": ".",
+    "sourceMap": true,
+    "removeComments": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "types": [
+      "core-js"
+    ]    
+  },
+  "exclude": [
+    "dist",
+    "node_modules",
+    "typings/main",
+    "typings/main.d.ts"
+  ],
+  "awesomeTypescriptLoaderOptions": {
+    "useWebpackText": true
+  },
+  "compileOnSave": false,
+  "buildOnSave": false,
+  "atom": { "rewriteTsconfig": false }  
+}
