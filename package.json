@@ -1,8 +1,8 @@
 {
   "name": "app",
   "version": "0.0.0",
-  "description": "",
-  "author": "",
+  "description": "Simple starter for using Angular 2 and Electron to create desktop apps.",
+  "author": "PL Young",
   "license": "MIT",
   "keywords": [ "electron", "angular2", "webpack", "starter" ],
   "repository": {
