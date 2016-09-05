@@ -70,6 +70,7 @@ import 'rxjs/Rx';
 Some of the components need Hammer.js.
 
 `npm install --save hammerjs`
+
 `npm install --save-dev @types/hammerjs`
 
 Update `./tsconfig.json` with hammerjs entry under types.
