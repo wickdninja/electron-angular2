@@ -1,6 +1,6 @@
 # Electron & Angular 2 starter
 
-This is a starter for using Angular 2 and Electron to create desktop apps. It has a simple 2 page routes set up and also shows an `ipcRenderer.send` call working from a component. 
+This is a starter for using Angular 2 and Electron to create desktop apps. It has a simple 2 page routes set up and also shows an `ipcRenderer.send` call working from a component.
 
 ## Install
 
