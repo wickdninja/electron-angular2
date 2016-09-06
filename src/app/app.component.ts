@@ -1,19 +1,9 @@
-import { Component, ViewEncapsulation } from '@angular/core';
-import {remote, ipcRenderer} from 'electron';
-
-let {dialog} = remote;
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app',
   templateUrl: 'app.component.html',
-  styleUrls: ['app.component.css'],
-  encapsulation: ViewEncapsulation.None
+  styleUrls: ['app.component.css']
 })
 export class AppComponent { 
-  constructor() {
-  }
-
-  ipcTest() {
-    ipcRenderer.send('ipctest');
-  }
 }

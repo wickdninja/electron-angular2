@@ -1,6 +1,6 @@
 # Electron & Angular 2 starter
 
-This is a simple starter for using Angular 2 and Electron to create desktop apps.
+This is a starter for using Angular 2 and Electron to create desktop apps. It has a simple 2 page routes set up and also shows an `ipcRenderer.send` call working from a component. 
 
 ## Install
 
@@ -73,6 +73,8 @@ Some of the components need Hammer.js.
 
 `npm install --save-dev @types/hammerjs`
 
+Add `hammerjs/hammer` import to `vendors.ts`.
+
 Update `./tsconfig.json` with hammerjs entry under types.
 
 ```json
@@ -94,6 +96,7 @@ Now open `./src/index.html` and update it to point to the icon font's CSS.
 <html>
 <head>
     <title>APP</title>
+    <base href="./">
     <link href="assets/iconfont/material-icons.css" rel="stylesheet">
 </head>
 <body>
