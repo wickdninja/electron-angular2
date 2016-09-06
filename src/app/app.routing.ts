@@ -6,7 +6,12 @@ import { Page2Component } from './page2.component';
 const appRoutes: Routes = [
   { path: 'page1', component: Page1Component },
   { path: 'page2', component: Page2Component },
-  { path: '**', component: Page1Component }, // default route shows page 1
+  
+  // default route shows page 1
+  { path: '**', component: Page1Component }
+  
+  // could also try this ranter than '**'?
+  //{ path: '', redirectTo: 'page1', pathMatch: 'full' }
 ];
 
 export const appRoutingProviders: any[] = [ ]; 
