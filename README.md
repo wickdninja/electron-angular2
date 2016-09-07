@@ -1,6 +1,6 @@
 # Electron & Angular 2 starter
 
-This is a starter for using Angular 2 and Electron to create desktop apps. It has a simple 2 page routes set up and also shows an `ipcRenderer.send` call working from a component.
+This is a starter for using Angular 2 and Electron to create desktop apps. It has a simple 2 page routes set up and also shows an `ipcRenderer.send` call working from a component. 
 
 ## Install
 
@@ -73,7 +73,7 @@ Some of the components need Hammer.js.
 
 `npm install --save-dev @types/hammerjs`
 
-Add `hammerjs/hammer` import to `vendors.ts`.
+Add `import hammerjs/hammer` import to `vendors.ts`.
 
 Update `./tsconfig.json` with hammerjs entry under types.
 
@@ -107,3 +107,44 @@ Now open `./src/index.html` and update it to point to the icon font's CSS.
 </body>
 </html>
 ```
+
+## jQuery
+
+If you need it for whatever reason. Similar process might work for other libraries too.
+
+Install it via npm.
+
+`npm install --save jquery`
+
+`npm install -save-dev @types/jquery`
+
+Add it to `vendor.ts` at bottom somewhere but probably before any other vendor stuff you import that requires it.
+
+`import 'jquery/dist/jquery';`
+
+Add an entry in `tsconfig.json` under types.
+
+```json
+"types": [
+  "core-js",
+  "jQuery"
+]
+```
+
+Update `webpack.config.ts` with an entry under plugins.
+
+`new webpack.ProvidePlugin({ jQuery: 'jquery', $: 'jquery', jquery: 'jquery' }),`
+
+So you end up with something like this...
+
+```js
+plugins: [
+  new ForkCheckerPlugin(),
+  new webpack.optimize.OccurenceOrderPlugin(true),
+  new webpack.optimize.CommonsChunkPlugin({ name: ['app', 'vendor', 'polyfills'], minChunks: Infinity }),
+  new webpack.ProvidePlugin({ jQuery: 'jquery', $: 'jquery', jquery: 'jquery' }),
+  new CopyWebpackPlugin([{ from: './src/assets', to: 'assets' }, { from: './src/index.html', to: 'index.html' }])
+],
+```
+
+The are more suggestions on [this page](https://github.com/electron/electron/issues/254) if you want to see other ways of loading jQuery for use with Electron.
