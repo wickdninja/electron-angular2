@@ -16,7 +16,7 @@ This will create a build and then start to watch for changes and start the elect
 
 This is work in progress and I will add to it or make changes as I discover new things while developing my app.
 
-## Material Design for Angular 2
+## [Material Design for Angular 2](#material)
 
 More information can be found at, <https://github.com/angular/material2>
 
@@ -108,7 +108,7 @@ Now open `./src/index.html` and update it to point to the icon font's CSS.
 </html>
 ```
 
-## jQuery
+## [jQuery](#jquery)
 
 Here is how you can add jQuery. (Similar process might work for other libraries too)
 
