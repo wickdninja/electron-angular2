@@ -131,6 +131,8 @@ Add an entry in `tsconfig.json` under types.
 ]
 ```
 
+*The following will probably not be needed for most other libraries.*
+
 Update `webpack.config.ts` with an entry under plugins.
 
 `new webpack.ProvidePlugin({ jQuery: 'jquery', $: 'jquery', jquery: 'jquery' }),`
