@@ -2,6 +2,8 @@
 
 This is a starter for using Angular 2 and Electron to create desktop apps. It has a simple 2 page routes set up and also shows an `ipcRenderer.send` call working from a component. 
 
+Read on for instructions on adding [Material Design for Angular 2](#material-design-for-angular-2) or [jQuery](#jquery).
+
 ## Install
 
 `npm install`
@@ -16,7 +18,7 @@ This will create a build and then start to watch for changes and start the elect
 
 This is work in progress and I will add to it or make changes as I discover new things while developing my app.
 
-## [Material Design for Angular 2](#material)
+## Material Design for Angular 2
 
 More information can be found at, <https://github.com/angular/material2>
 
@@ -108,7 +110,7 @@ Now open `./src/index.html` and update it to point to the icon font's CSS.
 </html>
 ```
 
-## [jQuery](#jquery)
+## jQuery
 
 Here is how you can add jQuery. (Similar process might work for other libraries too)
 
