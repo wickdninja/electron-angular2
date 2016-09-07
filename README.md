@@ -110,7 +110,7 @@ Now open `./src/index.html` and update it to point to the icon font's CSS.
 
 ## jQuery
 
-If you need it for whatever reason. Similar process might work for other libraries too.
+Here is how you can add jQuery. (Similar process might work for other libraries too)
 
 Install it via npm.
 
