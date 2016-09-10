@@ -151,4 +151,4 @@ plugins: [
 ],
 ```
 
-The are more suggestions on [this page](https://github.com/electron/electron/issues/254) if you want to see other ways of loading jQuery for use with Electron.
+There are more suggestions on [this page](https://github.com/electron/electron/issues/254) if you want to see other ways of loading jQuery for use with Electron.
