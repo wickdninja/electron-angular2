@@ -6,6 +6,10 @@ Read on for instructions on adding [Material Design for Angular 2](#material-des
 
 ## Install
 
+`npm install -g rimraf`
+
+`npm install -g webpack`
+
 `npm install`
 
 ## Build & Run
