@@ -8,10 +8,10 @@ const appRoutes: Routes = [
   { path: 'page2', component: Page2Component },
   
   // default route shows page 1
-  { path: '**', component: Page1Component }
+  { path: '**', component: Page1Component },
   
-  // could also try this ranter than '**'?
-  //{ path: '', redirectTo: 'page1', pathMatch: 'full' }
+  // what to do when empty (aka.. a default path)
+  { path: '', redirectTo: '/page1', pathMatch: 'full' }
 ];
 
 export const appRoutingProviders: any[] = [ ]; 
