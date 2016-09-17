@@ -24,6 +24,14 @@ If I updated the versions in the package.json you can run this command to update
 
 This will create a build and then start to watch for changes and start the electron app. When you make changes to your scripts it should be picked up, recompiled, and the electron app auto refresh.
 
+`npm build`
+
+To do a build. Nice t check if there are errors before you start using npm start.
+
+`npm run start:electron`
+
+To run the app in electron after a build. It will not auto build and refresh the ap if you make source changes.
+
 ## Note
 
 This is work in progress and I will add to it or make changes as I discover new things while developing my app.
