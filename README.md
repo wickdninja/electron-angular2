@@ -12,6 +12,12 @@ Read on for instructions on adding [Material Design for Angular 2](#material-des
 
 `npm install`
 
+## Updating
+
+If I updated the versions in the package.json you can run this command to update to latest version of the needed packages.
+
+`npm update`
+
 ## Build & Run
 
 `npm start`
